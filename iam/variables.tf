@@ -5,5 +5,5 @@ variable "name" {
 
 variable "policy_arn" {
   type    = string
-  default = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
+  default = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy, arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
 }
