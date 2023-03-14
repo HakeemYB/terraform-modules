@@ -5,10 +5,10 @@ variable "name" {
 
 variable "role_arn" {
   type    = string
-  default = ""
+  default = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
 }
 
 variable "private_subnet_ids" {
   type    = list(string)
-  default = []
+  default = ["10.0.11.0/24", "10.0.12.0/24"]
 }
